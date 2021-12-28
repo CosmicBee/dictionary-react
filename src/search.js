@@ -1,15 +1,23 @@
-import React from "react";
+import React,{useState} from "react";
 import "./search.css";
 
-export default function search() {
+export default function Search() {
+let [keyword, setkeyword] = useState("");
+
+
   function find(event) {
     event.preventDefault();
-    alert("Searching");
+    alert(`Searching for ${keyword} definition`);
   }
+
+  function handleKeywordChange(event) {
+    setkeyword(event.target.value);
+  }
+
  return (
     <div className="search">
       <form onSubmit={find}>
-        <input type="search" autoFocus={true} />
+        <input type="search" onChange= {handleKeywordChange} />
       </form>
     </div>
   );
