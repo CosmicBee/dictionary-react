@@ -6,16 +6,17 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1>Dictionary</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Definition
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/CosmicBee/dictionary-react"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          GitHub
         </a>
       </header>
     </div>
